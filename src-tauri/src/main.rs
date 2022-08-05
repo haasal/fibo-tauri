@@ -4,7 +4,7 @@
 )]
 
 use tauri::Manager;
-use window_ext::WindowExt;
+use window_ext::{ToolbarThickness, WindowExt};
 
 mod window_ext;
 
@@ -12,8 +12,7 @@ fn main() {
     tauri::Builder::default()
         .setup(|app| {
             let win = app.get_window("main").unwrap();
-            win.set_transparent_titlebar(true);
-
+            win.set_transparent_titlebar(ToolbarThickness::Thin);
             Ok(())
         })
         .run(tauri::generate_context!())
