@@ -1,5 +1,5 @@
 <script lang="ts">
-    let n_1 = 1;
+    let n_1 = 0;
     let n_2 = 1;
     let n = 1;
 
@@ -13,7 +13,7 @@
 </script>
 
 <button
-    class="rounded-md hover:bg-slate-100 bg-white py-2 px-10 text-secondary"
+    class="rounded-md hover:bg-yellow-400  bg-white py-2 px-10 text-secondary"
     on:click={fibbonachi}
 >
     {n}

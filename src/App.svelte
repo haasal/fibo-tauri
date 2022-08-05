@@ -12,7 +12,7 @@
 
 <div
     data-tauri-drag-region
-    class="relative h-12 z-10 flex justify-center items-center {focused
+    class="relative h-[50px] z-10 flex justify-center items-center {focused
         ? 'bg-secondary'
         : 'bg-tertiary'} transition-colors duration-100"
 >
@@ -24,7 +24,7 @@
     />
 </div>
 <main
-    class="bg-primary absolute inset-0 h-auto pt-12 flex justify-center items-center"
+    class="bg-primary absolute inset-0 h-auto pt-[50px] flex justify-center items-center"
 >
     <FibButton />
 </main>
